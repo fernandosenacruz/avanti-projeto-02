@@ -3,7 +3,14 @@ import { Card, CardContent, Skeleton } from '@mui/material';
 
 const UserProfileSkeleton: React.FC = () => {
   return (
-    <Card style={{ marginTop: '20px', padding: '20px' }}>
+    <Card
+      style={{
+        marginTop: '20px',
+        padding: '20px',
+        width: '100%',
+        maxWidth: '503px',
+      }}
+    >
       <CardContent style={{ textAlign: 'center' }}>
         <Skeleton
           variant="circular"
