@@ -41,7 +41,13 @@ const UserProfile: React.FC<UserProfileProps> = ({
 
   if (userData) {
     return (
-      <Card style={{ marginTop: '20px' }}>
+      <Card
+        style={{
+          backgroundColor: '#d9d9d9',
+          borderRadius: '25px',
+          marginTop: '20px',
+        }}
+      >
         <CardContent style={{ display: 'flex', flexDirection: 'row' }}>
           <Avatar
             alt={userData.name ?? 'Sem nome cadastrado'}
@@ -63,9 +69,10 @@ const UserProfile: React.FC<UserProfileProps> = ({
             <Typography
               variant="h6"
               sx={{
-                fontSize: { xs: '1rem', sm: '1.5em', md: '20px' },
+                fontSize: { xs: '0.7rem', sm: '1rem', md: '20px' },
                 fontWeight: 'bold',
                 marginLeft: '1.5rem',
+                marginBottom: '0.5rem',
                 color: '#005cff',
               }}
             >
@@ -74,7 +81,7 @@ const UserProfile: React.FC<UserProfileProps> = ({
             <Typography
               variant="body1"
               sx={{
-                fontSize: { xs: '0.8rem', sm: '1rem', md: '1.2rem' },
+                fontSize: { xs: '0.5rem', sm: '0.8rem', md: '1rem' },
                 marginLeft: '1.5rem',
               }}
             >

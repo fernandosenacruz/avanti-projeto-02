@@ -28,7 +28,11 @@ const App: React.FC = () => {
   return (
     <Container
       maxWidth="lg"
-      style={{
+      sx={{
+        display: 'flex',
+        justifyContent: 'center',
+        alignItems: 'center',
+        flexDirection: 'column',
         marginTop: '50px',
         width: '80%',
       }}

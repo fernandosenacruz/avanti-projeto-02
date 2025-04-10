@@ -1,5 +1,4 @@
 import React from 'react';
-import { TextField, InputAdornment } from '@mui/material';
 import SearchIcon from '@mui/icons-material/Search';
 
 interface SearchBarProps {
@@ -23,6 +22,8 @@ const SearchBar: React.FC<SearchBarProps> = ({
         borderRadius: '10px',
         border: 'solid 1px #dddddd',
         width: '100%',
+        marginTop: '2rem',
+        maxWidth: '503px',
       }}
     >
       <input
@@ -37,6 +38,7 @@ const SearchBar: React.FC<SearchBarProps> = ({
           outline: 'none',
           fontWeight: 'bold',
           margin: '0 0.5rem',
+          maxWidth: '90%',
         }}
       />
 
